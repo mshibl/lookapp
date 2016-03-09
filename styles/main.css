@@ -1,0 +1,47 @@
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.col-xs-15 {
+    width: 20%;
+    float: left;
+}
+@media (min-width: 768px) {
+.col-sm-15 {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-15 {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 1200px) {
+    .col-lg-15 {
+        width: 20%;
+        float: left;
+    }
+}
+
+.gallery img{
+	width: 100%;
+	height: 100%;
+}
+
+.gallery{
+	transition: 0.1s ease-in-out;
+}
+
+.gallery:hover{
+    box-shadow: 0px 0px 250px #000000;
+	transform: scale(1.2, 1.2);
+	z-index: 2;
+}

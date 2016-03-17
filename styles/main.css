@@ -95,7 +95,7 @@ body {
     color: #FFFFFF;
     font-size: 20px;
     /*font-family: '.SFNSDisplay-Regular', sans-serif;*/
-    font-family: "San Francisco Text";
+    font-family: "San Francisco Text", system, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
     top: 1vh;
     right: 0;
 }

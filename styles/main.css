@@ -69,9 +69,9 @@
 }
 
 
-/*body {
-    font-family: -apple-system, Helvetica, Arial, sans-serif;
-}*/
+body {
+  font-family: system, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
+}
 
 #react-container{
     overflow: hidden;
@@ -94,7 +94,8 @@
     position: absolute;
     color: #FFFFFF;
     font-size: 20px;
-    font-family: '.SFNSDisplay-Regular', sans-serif;
+    /*font-family: '.SFNSDisplay-Regular', sans-serif;*/
+    font-family: "San Francisco Text";
     top: 1vh;
     right: 0;
 }
@@ -103,7 +104,6 @@
     position: absolute;
     color: #FFFFFF;
     /*font-size: 20px;*/
-    font-family: "San Francisco Text";
     bottom: 2vw;
     left: 2vw;   
     /*width: 25%;*/

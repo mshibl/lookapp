@@ -120,12 +120,12 @@ var ThumbnailRoll = React.createClass({
   render: function() {
     var thumbnailNodes = this.props.data.map(function(thumbnail) {
       return (
-  			<div className="gallery col-md-15 col-sm-3 col-xs-6">
+  			<div className="gallery col-md-15 col-sm-4 col-xs-6">
 	  			<a href=''>
 	  				<img src={thumbnail.url}/>
 	  			</a> 
   			</div>
-      ); 
+      );
     });
     
     return (

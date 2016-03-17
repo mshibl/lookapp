@@ -22,11 +22,11 @@
   <body ng-app="lookWebApp">
   	<div ng-controller="mainCtrl">
 	  	<div class="container-fluid">
-	  		<div class="row">
+	  		<!-- <div class="row"> -->
 	  			<div class="gallery col-md-15 col-sm-3 col-xs-6" ng-repeat="imageURL in images" >
 		  			<a href='' ng-click="selectImage(imageURL)"><img ng-src='{{imageURL}}'/></a>
 	  			</div>
-	  		</div>
+	  		<!-- </div> -->
 	  	</div>
 	  	<div ng-click="selectImage(false)" class="image-display" ng-if="selectedImage">
 	  		<img class="img-responsive" ng-src='{{selectedImage}}'/>

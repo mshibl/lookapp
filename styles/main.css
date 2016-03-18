@@ -36,6 +36,7 @@
 .gallery img{
 	width: 100%;
 	height: 100%;
+    /*transform: rotate(90deg);*/
 }
 
 /*.gallery{
@@ -119,7 +120,7 @@ body {
 }
 
 #cover-user-info div{
-    display: inline;
+    display: inline-block;
 }
 
 @media (min-width: 300px) {
@@ -139,5 +140,10 @@ body {
 }
 */
 .user-name{
-    text-transform: capitalize;
+    text-transform: capitalize; 
+}
+
+.user-meta-info{
+    margin-left: 15px;
+    vertical-align: middle;
 }

@@ -48,7 +48,9 @@ var CoverContainer = React.createClass({
 					userImageLarge: data.results[0].user.picture.large,
 					userImageMed: data.results[0].user.picture.medium,
 					userFirstName: data.results[0].user.name.first,
-					userLastName: data.results[0].user.name.last
+					userLastName: data.results[0].user.name.last,
+					userCity: data.results[0].user.location.city,
+					userState: data.results[0].user.location.state
 				});
 			}.bind(this),
 			error: function(xhr, status, err) {
@@ -61,8 +63,12 @@ var CoverContainer = React.createClass({
   },
   getInitialState: function() {
     return {
-    	userImageLarge: '',
-    	userImageMed: ''
+					userImageLarge: "",
+					userImageMed: "",
+					userFirstName: "",
+					userLastName: "",
+					userCity: "",
+					userState: ""
     };
   },
 	render: function() {
@@ -73,7 +79,10 @@ var CoverContainer = React.createClass({
 				<div id="cover-follow-button">Follow <i className="fa fa-heart-o"></i></div>
 				<div id="cover-user-info">
 					<div><img className="img-circle" src={this.state.userImageMed} /></div>
-					<div className="user-name">{this.state.userFirstName} {this.state.userLastName}</div>
+					<div className="user-meta-info">
+						<div className="user-name">{this.state.userFirstName} {this.state.userLastName}</div><br />
+						<div className="user-last-location">10m ago in {this.state.userCity}, {this.state.userState}</div>
+					</div>
 				</div>
 			</div>
     );
